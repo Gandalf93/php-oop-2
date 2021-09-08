@@ -10,7 +10,7 @@ class User {
     public $name;
     public $surname;
     public $email;
-    public $shipping;
+    public $shipping='upgrade for free shipping';
     
    
 
@@ -27,10 +27,8 @@ class User {
 
 
     public function setShipping($upgrade){
-        if($upgrade = 'true') {
+        if($upgrade = 1) {
             $this->shipping = 'free shipping';
-        }else{
-            $this->shipping = 'no free shipping';
         }
     }
 

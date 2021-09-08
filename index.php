@@ -13,15 +13,15 @@ require_once 'Premium.php';
 
 
 $mario = new User('Mario','Rossi','mariorossi@gmail.com');
-$mario->setShipping('true');
+$mario->setShipping(1);
 
 
 $luisa = new User('Luisa','Verdi','luisaverdi@gmail.com');
-$luisa->setShipping('true');
+$luisa->setShipping(1);
 
 
 $anna = new User('Anna','Mari','annamari@gmail.com');
-$anna->setShipping('false');
+$anna->setShipping(0);
 
 
 
