@@ -9,17 +9,20 @@ error_reporting(E_ALL);
 
 
 require_once 'Premium.php';
-require_once 'Products.php';
-require_once 'User.php';
+
+
 
 $mario = new User('Mario','Rossi','mariorossi@gmail.com');
 $mario->setShipping('true');
 
+
 $luisa = new User('Luisa','Verdi','luisaverdi@gmail.com');
-$luisa->setShipping('false');
+$luisa->setShipping('true');
+
 
 $anna = new User('Anna','Mari','annamari@gmail.com');
-$anna->setShipping('true');
+$anna->setShipping('false');
+
 
 
 
@@ -36,9 +39,11 @@ $anna->setShipping('true');
   <body>
       <h2><?php echo $mario->getFullName();?></h2>
       <p><?php echo $mario->getShipping(); ?></p>
+      
 
       <h2><?php echo $luisa->getFullName();?></h2>
       <p><?php echo $luisa->getShipping(); ?></p>
+      
 
       <h2><?php echo $anna->getFullName();?></h2>
       <p><?php echo $anna->getShipping(); ?></p>

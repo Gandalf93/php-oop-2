@@ -11,6 +11,8 @@ class User {
     public $surname;
     public $email;
     public $shipping;
+    
+   
 
     function __construct($_name, $_surname, $_email){
         $this->name = $_name;
@@ -23,11 +25,12 @@ class User {
         return $this->name . ' ' . $this->surname;
     }
 
-    public function setShipping($premium){
-        if($premium = 'true') {
+
+    public function setShipping($upgrade){
+        if($upgrade = 'true') {
             $this->shipping = 'free shipping';
         }else{
-            $this->shipping = 'upgrade for free shipping!';
+            $this->shipping = 'no free shipping';
         }
     }
 
