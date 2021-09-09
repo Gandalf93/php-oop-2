@@ -27,7 +27,7 @@ class User {
 
 
     public function setShipping($upgrade){
-        if($upgrade = 1) {
+        if($upgrade == 1) {
             $this->shipping = 'free shipping';
         }
     }
